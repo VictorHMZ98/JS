@@ -37,3 +37,18 @@ function nameFriends(name1, name2, name3){
 }
 
 nameFriends();
+
+/*
+#### Part 2
+Ed would like to create a function that takes in a birth year and returns the age.
+
+i.e. 1990 returns 30
+*/
+
+function actualAge(){
+    let year = window.prompt("Tell me your birth year: ","2000" );
+    const age = new Date().getFullYear() - year;
+    return age;
+}
+
+console.log("Your age is: "+ actualAge());
