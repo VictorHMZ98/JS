@@ -28,7 +28,7 @@ The output should be a console greeting to his friends saying:
 `Welcome {name1}, {name2}, {name3}.`
 */
 
-
+/*
 function nameFriends(name1, name2, name3){
     name1=window.prompt("Tell me your name: ","Friend 1" );
     name2=window.prompt("Tell me your name: ","Friend 2" );
@@ -37,6 +37,14 @@ function nameFriends(name1, name2, name3){
 }
 
 nameFriends();
+*/
+
+function nameFriends(name){
+    name=window.prompt("Tell me your name: ","Friend" );
+    return name;
+}
+
+console.log("Welcome: "+ nameFriends()+", "+nameFriends()+", "+nameFriends()+".");
 
 /*
 #### Part 2
@@ -52,3 +60,18 @@ function actualAge(){
 }
 
 console.log("Your age is: "+ actualAge());
+
+/*
+#### Part 3
+Ed would like to create a function that prints out,
+`Welcome {name1}, you are {age1}. Welcome {name2}, you are {age2}. 
+Welcome {name3}, you are {age3}.`*/
+
+function information(name_2){
+    name_2=window.prompt("Tell me your name: ","Name" );
+    let year_2 = window.prompt("Tell me your birth year: ","2000" );
+    const age_2 = new Date().getFullYear() - year_2;
+    return console.log("Welcome "+name_2+" you are "+age_2+".");
+}
+
+information()+information()+information();
