@@ -20,3 +20,20 @@ console.log("María your payment for the month is: " + payment(20));
 console.log("María your payment for the month is: " + payment(35));
 console.log("María your payment for the month is: " + payment(350));
 
+/*### Exercise #2
+
+#### Part 1
+Ed would like a way to input 3 names of his friends.
+The output should be a console greeting to his friends saying: 
+`Welcome {name1}, {name2}, {name3}.`
+*/
+
+
+function nameFriends(name1, name2, name3){
+    name1=window.prompt("Tell me your name: ","Friend 1" );
+    name2=window.prompt("Tell me your name: ","Friend 2" );
+    name3=window.prompt("Tell me your name: ","Friend 3" );
+    return console.log("Welcome: "+ name1 +", "+ name2+", " + name3+".");
+}
+
+nameFriends();
